@@ -1,0 +1,15 @@
+name: Github Actions -boolean Workflow Dispatch 
+run-name: Running - ${{ github.event_name }}
+on: 
+  workflow_dispatch:
+    inputs:
+        severidade:
+            description: funcionalidade critica?
+            type: boolean
+jobs:
+  on-workflow_dispatch:
+    runs-on:   ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "boolean Workflow dispatch basic - ${{inputs.severidade}}"

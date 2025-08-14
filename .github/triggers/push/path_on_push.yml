@@ -1,0 +1,15 @@
+name: Github Actions - Push on path template basic
+run-name: Running - ${{ github.event_name }}
+on: 
+  push:
+    paths:
+      - '**.txt'
+
+jobs:
+  on-push:
+    runs-on:   ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "push on path"
+          

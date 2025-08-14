@@ -1,0 +1,15 @@
+name: Github Actions - Push on branches template basic
+run-name: Running - ${{ github.event_name }}
+on: 
+  push:
+    branches:
+      - main
+      - develop
+      - 'release/**'
+jobs:
+  on-push:
+    runs-on:   ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Comentáro do workflow PUSH"

@@ -19,4 +19,4 @@ jobs:
     steps:
       - name: Comentário
         run: |
-          echo "Choice Workflow dispatch basic ${{inputs.tags}}"
+          echo "Choice Workflow dispatch basic - ${{inputs.tags}}"

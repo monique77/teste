@@ -1,4 +1,4 @@
-name: Github Actions -Choice Workflow Dispatch 
+name: Github Actions -Cron Workflow Dispatch 
 run-name: Running - ${{ github.event_name }}
 on:
   schedule:

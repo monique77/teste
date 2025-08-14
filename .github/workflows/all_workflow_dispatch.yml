@@ -1,0 +1,30 @@
+name: Github Actions -All t Workflow Dispatch 
+run-name: Running - ${{ github.event_name }}
+on: 
+  workflow_dispatch:
+    inputs:
+        tags:
+            description: Selecitone a tag
+            type: choice
+            options:
+               - tag_1
+               - tag_2
+               - tag_3
+            default: 'tag_1'
+            required: true
+        browser:
+            description: Selecione o Browser
+            type: string
+        severidade:
+            description: Funcionalidade critica?
+            type: boolean
+
+jobs:
+  on-workflow_dispatch:
+    runs-on:   ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Choice Workflow dispatch basic - ${{inputs.tags}}"
+          echo "Choice Workflow dispatch basic - ${{inputs.browser}}"
+          echo "Choice Workflow dispatch basic - ${{inputs.severidade}}"

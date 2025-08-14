@@ -1,0 +1,13 @@
+name: Github Actions -Choice Workflow Dispatch 
+run-name: Running - ${{ github.event_name }}
+on:
+  schedule:
+    - cron: '0 18 * * 1-5'
+
+jobs:
+  ton-workflow_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Comentário Cron Job"

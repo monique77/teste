@@ -2,7 +2,7 @@ name: Github Actions - Workflow Dispatch
 run-name: Running - ${{ github.event_name }}
 on: [workflow_dispatch]
 jobs:
-  on-push:
+  on-workflow_dispatch:
     runs-on:   ubuntu-latest
     steps:
       - name: Comentário

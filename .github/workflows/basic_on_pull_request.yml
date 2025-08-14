@@ -1,0 +1,12 @@
+name: Github Actions - Pull Resquest
+run-name: Running - ${{ github.event_name }}
+on: [pull_request]
+
+jobs:
+  on-push:
+    runs-on:   ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Pull request"
+          

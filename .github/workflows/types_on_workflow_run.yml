@@ -1,0 +1,17 @@
+name: Github Actions Workflow Run Basic Template
+run-name: Running - Workflow run Basic Template
+on: 
+  workflow_run:
+    workflows: [Git Actions - Trigger 1]
+    types: [completed]
+    # types: [requested]
+    # types: [in_progress]
+    # types: [completed, requested, in_progress]
+jobs:
+  on_push: 
+      runs-on: ubunto-20.04 
+      steps:
+        - name: Comentário
+          run: |
+            echo "Workflow que foi trigado"  
+ 

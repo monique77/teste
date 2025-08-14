@@ -1,0 +1,13 @@
+name: Github Actions - Pull Resquest on branches
+run-name: Running - ${{ github.event_name }}
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  on-push:
+    runs-on:   ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Pull request on branches"

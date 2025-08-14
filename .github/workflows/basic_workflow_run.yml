@@ -2,12 +2,12 @@ name: Github Actions Workflow Run Basic Template
 run-name: Running - Workflow run Basic Template
 on: 
   workflow_run:
-    workflows: [Github Actions Trigger 1]
+    workflows: [Git Actions - Trigger 1]
 jobs:
   on_push: 
       runs-on: ubunto-20.04 
       steps:
         - name: Comentário
           run: |
-            echo "workflow foi triggado"  
+            echo "Trigger finalizado"  
  

@@ -2,9 +2,9 @@ name: Github Actions - Push branches ignore template basic
 run-name: Running - ${{ github.event_name }}
 on: 
   push:
-    branches:
+    branches-ignore:
       - main
-      
+
 jobs:
   on-push:
     runs-on:   ubuntu-latest

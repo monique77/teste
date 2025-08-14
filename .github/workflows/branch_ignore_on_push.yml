@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Comentário
         run: |
-          echo "Comentáro do workflow PUSH"
+          echo "Ignorando o branch main"
